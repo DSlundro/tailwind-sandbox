@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
     <title>Dark Mode</title>
   </head>
   <body>
     <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+    <button class="bg-red-300 py-3 px-6 rounded-xl font-semibold text-lg">Dark</button>
+    <div class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shado-xl">
+      <h3 class="text-slate-900 dark:text-white font-medium">Lorem ipsum dolor sit amet.</h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-3 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio consequuntur pariatur voluptatibus libero voluptate cum obcaecati velit neque vel. Voluptas nihil asperiores minus sed commodi, labore dolore voluptates nemo.
+        Nihil itaque, voluptas minus at reiciendis unde veritatis commodi veniam animi quia asperiores modi dignissimos dolorum, deserunt dicta voluptatem nulla, quisquam magni cupiditate! Quia aliquam accusantium, reiciendis vitae nostrum amet.
+        Aspernatur iusto itaque animi delectus dignissimos amet ex officia iure dolorem? Animi, ullam quos ea quia voluptates cumque, eos natus ipsam laboriosam dolores saepe repellat, soluta error assumenda laudantium sunt.
+      </p>
+    </div>
+
+    <script>
+      document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('html').classList.toggle('dark')
+      })
+    </script>
   </body>
 </html>
 
