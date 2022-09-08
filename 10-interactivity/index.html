@@ -9,25 +9,50 @@
   </head>
   <body>
     <!-- Hover State Styling -->
-
+    <h2 class="font-semibold text-2xl ml-3">Hover</h2>
+    <button class="bg-black text-white py-3 px-8 rounded-xl m-3
+    hover:bg-orange-400 hover:text-blue-800
+    ">Click me</button>
     <!-- Focus State Styling -->
-
+    <h2 class="font-semibold text-2xl ml-3">Focus</h2>
+    <button class="bg-black text-white py-3 px-8 rounded-xl m-3
+    focus:bg-green-400 focus:text-blue-800
+    ">Click me</button>
     <!-- Active State Styling -->
-
+    <h2 class="font-semibold text-2xl ml-3">Active</h2>
+    <button class="bg-black text-white py-3 px-8 rounded-xl m-3
+    active:bg-orange-400 active:text-blue-800
+    ">Click me</button>
     <!-- Styling based on parent state -->
-
+    <a href=""
+    class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+    >
+    <h3 class="group-hover:text-white">Card Title</h3>
+    <p class="group-hover:text-white">This is the card text</p>
+    </a>
     <!-- Pseudo Classes -->
-
+    <ul>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">Item1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">Item2</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">Item3</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">Item4</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">Item5</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">Item6</li>
+    </ul><br>
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
-
+    <select class="appearance-none px-2">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br>
     <!-- Cursor -->
-
-    <!-- Resize -->
-
+    <button class="bg-black text-white py-3 px-8 rounded-xl m-3 cursor-not-allowed">Click me</button>
+    <p class="cursor-pointer text-white">Lorem, ipsum dolor.</p>
     <!-- User Select -->
-
-    <!-- Smooth Scroll Example -->
+    <div class="select-none">Lorem ipsum dolor sit amet.</div>
+    <div class="select-text">Lorem ipsum dolor sit amet.</div>
+    <div class="select-all">Lorem ipsum dolor sit amet.</div>
+    <div class="select-auto">Lorem ipsum dolor sit amet.</div>
   </body>
 </html>
 
